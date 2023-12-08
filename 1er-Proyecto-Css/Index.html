@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Simple</title>
+    <style>
+        body {font-family: 'Verdana', sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;}
+        .chat-box {border: 1px solid #999; border-radius: 8px; overflow: hidden; margin: 15px; max-width: 380px;}
+        .msg-container {padding: 8px;}
+        .msg {margin: 8px; padding: 8px; border-radius: 5px;}
+        .in-msg {background-color: #e0e0e0;}
+        .out-msg {background-color: #4CAF50; color: white;}
+        .input-section {margin: 15px;}
+        input {padding: 8px; width: 65%; border: 1px solid #ccc; border-radius: 5px;}
+        button {padding: 8px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div class="chat-box" id="chat-box">
+        <div class="msg-container">
+            <div class="msg in-msg">¡Hola, ¿cómo estás?</div>
+            <div class="msg out-msg">¡Hola! Estoy bien, ¿y tú?</div>
+        </div>
+    </div>
+    <div class="input-section">
+        <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <script src="custom-script.js"></script>
+</body>
+</html>
